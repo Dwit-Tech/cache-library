@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\DwitTech.DotNetCoreApp.Data\DwitTech.CacheLibrary.Data.csproj" />
+  </ItemGroup>
+
 </Project>

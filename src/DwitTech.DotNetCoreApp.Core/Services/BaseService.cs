@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DwitTech.DotNetCoreApp.Core.Services
+namespace DwitTech.CacheLibrary.Core.Services
 {
     internal abstract class BaseService
     {

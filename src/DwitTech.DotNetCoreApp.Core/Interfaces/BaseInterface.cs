@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DwitTech.DotNetCoreApp.Core.Interfaces
+namespace DwitTech.CacheLibrary.Core.Interfaces
 {
     internal interface BaseInterface
     {

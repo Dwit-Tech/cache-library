@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace DwitTech.DotNetCoreApp.Data.Context
+namespace DwitTech.CacheLibrary.Data.Context
 {
-    public class DefaultDbContext : DbContext
+    public class CacheLibraryDbContext : DbContext
     {
-        public DefaultDbContext(DbContextOptions options) : base(options)
+        public CacheLibraryDbContext(DbContextOptions<CacheLibraryDbContext> options) : base(options)
         {
         }
 

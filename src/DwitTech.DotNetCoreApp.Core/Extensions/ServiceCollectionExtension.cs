@@ -1,4 +1,4 @@
-﻿using DwitTech.DotNetCoreApp.Data.Context;
+﻿using DwitTech.CacheLibrary.Data.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -24,7 +24,7 @@ namespace Microsoft.Extensions.DependencyInjection
             connectionString = connectionString.Replace("{DBUser}", configuration["DB_USERNAME"]);
             connectionString = connectionString.Replace("{DBPassword}", configuration["DB_PASSWORD"]);
 
-            service.AddDbContext<DefaultDbContext>(opt =>
+            service.AddDbContext<CacheLibraryDbContext>(opt =>
             {
                 opt.UseNpgsql(connectionString, c => c.CommandTimeout(120));
 #if DEBUG
